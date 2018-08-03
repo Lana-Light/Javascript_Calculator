@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Modern+Antiqua|Oswald");
+body {
+  background: #b9f6ca;
+  font-family: "Modern Antiqua", "Oswald", cursive;
+}
+
+main {
+  color: #c6ff00;
+  background: cyan;
+  box-shadow: 2px 2px 7px 3px black;
+  font-size: 1.2em;
+  border: blue thin solid;
+  border-radius: 50% /5%;
+  width: 300px;
+  display: grid;
+  grid-template-rows: 80px 30px 30px 260px;
+  margin: 20px auto;
+  padding: 20px;
+  grid-template-columns: 300px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-rows: repeat(5, 30px);
+  margin: 20px 0 0;
+  padding: 20px 0 20px 16px;
+  grid-template-columns: repeat(4, 54px);
+  grid-gap: 12px 17px;
+  border-radius: 50%/5%;
+  box-shadow: blue 3px 3px 5px;
+}
+
+h1,
+.buttons {
+  background: #00bcd4;
+}
+
+h1 {
+  font-size: 1.2em;
+  border: blue thin solid;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px 1px red, -1px -1px 30px white, 1px 1px 20px white, 1px 1px 30px white;
+}
+
+input {
+  font-size: 1.1em;
+  border: blue thin solid;
+  border-radius: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+#equals {
+  grid-column: 4/5;
+  grid-row: 4/6;
+  color: red;
+}
+
+#clear,
+#clear-one {
+  color: red;
+}
+
+button {
+  transition: 0.5s;
+  color: purple;
+  background: #fff944;
+  box-shadow: 1px 1px 5px 1px black;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8em;
+  border: orange thin solid;
+  border-radius: 90% /30%;
+}
+button:hover {
+  cursor: pointer;
+  background: #fff59d;
+  border-color: red;
+}
+button:active {
+  color: cyan;
+  background: yellow;
+  box-shadow: none;
+  border-color: cyan;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+p {
+  font-size: 1em;
+  color: blue;
+  text-shadow: 1px 1px 1px white;
+}
+
+@media (max-width: 400px) {
+  main {
+    width: 260px;
+    grid-template-columns: 260px;
+    padding: 20px 15px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 49px);
+    padding: 20px 0 20px 11px;
+    grid-gap: 12px 14px;
+  }
+}
